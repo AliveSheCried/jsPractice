@@ -118,6 +118,11 @@ a.footer__link-dark:hover {
   place-items: center;
 }
 
+.ex1-foot {
+  padding-top: 1rem;
+  text-align: left;
+}
+
 .ex1-card {
   width: clamp(10rem, 50%, 50rem);
   display: -webkit-box;
@@ -148,6 +153,35 @@ a.footer__link-dark:hover {
 .ex1-card__auth {
   text-align: right;
   font-size: 0.7rem;
+}
+
+.ex1-card__note {
+  padding-top: 1rem;
+}
+
+.ex1-card__message {
+  padding-top: 0.7rem;
+  font-style: italic;
+  color: red;
+}
+
+.ex1-card__counter {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: navy;
+}
+
+.ex1-card__count {
+  font-size: 4rem;
+}
+
+img {
+  width: 90%;
+  height: auto;
+}
+
+.ex1-card__img {
+  max-width: 300px;
 }
 
 /* global elements */

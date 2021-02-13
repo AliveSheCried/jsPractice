@@ -21,16 +21,22 @@
             <div class="ex1-card">
               <div>
                   <h1>js practice</h1>
-                  <h4>exercise 2</h4>
+                  <h4>exercise 4</h4>
               </div>
-              <div id="btn" class="ex1-card__button">
-                  <button id="button" class="ex1-button">Change colour baby!</button>
+              <div>
+                  <form action="">
+                      <label for="message">Message you would like to pass</label>
+                      <input type="text" name="message" id="message">
+                      <input id="button" class="ex1-button" type="button" value="submit">
+                  </form>
               </div>
-              <div id="hex" class="ex1-card__hex">#ffffff</div>
+              <div class="ex1-card__note">Last message passed</div>
+              <div id="lastMessage" class="ex1-card__message"></div>
               <div class="ex1-foot">
                 <a class="std-link" href="../index.html">home</a>
               </div>
             </div>
+
           </div>
         
         <script src="./resources/script/script.js" async defer></script>
