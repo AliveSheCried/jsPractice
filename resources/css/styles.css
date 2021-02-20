@@ -182,6 +182,30 @@ img {
 
 .ex1-card__img {
   max-width: 300px;
+  padding-bottom: 10px;
+}
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ex1-card__client {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #384d38;
+  padding-bottom: 10px;
 }
 
 /* global elements */

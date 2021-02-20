@@ -63,5 +63,22 @@ img {
 }
 .ex1-card__img {
   max-width: 300px;
+  padding-bottom: 10px;
   
+}
+
+.testimonial {
+  display: flex;
+}
+
+.testimonial-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.ex1-card__client {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(56, 77, 56);
+  padding-bottom: 10px;
 }
