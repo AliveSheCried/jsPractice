@@ -1,84 +1,88 @@
-/* structure */
+/* general - page title & ex number*/
 
-.ex1-parent {
+.ex-{
+  &parent {
     display: grid;
     place-items: center;
   }
-
- .ex1-foot {
-  padding-top: 1rem;
-  text-align: left;
- }
-
-.ex1-card {
+  &foot {
+    padding-top: 1rem;
+    text-align: left;
+  }
+  &card {
     width: clamp(10rem, 50%, 50rem);
     display: flex;
     flex-direction: column;   
     background-color: #ffffff;
+    /* exercise 1*/
+    &__button {
+      padding: 5rem;
+      text-align: center;      
+    }
+    /* exercise 2*/
+    &__hex {
+      padding: 1rem;  
+      font-size: 2rem;      
+    }
+    /* exercise 3*/
+    &__word{
+      font-size: 1rem;
+    }  
+    &__auth {
+      text-align: right;  
+      font-size: 0.7rem;      
+    }
+    /* exercise 4*/
+    &__note {
+      padding-top: 1rem;
+    }
+    &__message {
+      padding-top:1rem;
+      font-style: italic;
+      color: red;
+    }
+    /* exercise 5*/
+    &__counter {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: navy;
+    }
+    &__count {
+      font-size: 4rem;
+    }
+    /* exercise 6*/
+    &__img {
+      max-width: 300px;
+      padding-bottom: 10px;  
+    }
+    /* exercise 7*/
+    &__client {
+      font-size: 2rem;
+      font-weight: bold;
+      color: rgb(56, 77, 56);
+      padding-bottom: 10px;
+    }
   }
-
-.ex1-card__button {
-    padding: 1rem;
-    text-align: center;      
-  }
-
-.ex1-button {
+  &button {
     padding: 5px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #f5f4f4;
   }
-
-.ex1-card__hex {
-    padding: 1rem;        
-  }
-
-  .ex1-card__auth {
-    text-align: right;  
-    font-size: 0.7rem;      
-  }
-
-.ex1-card__note {
-  padding-top: 1rem;
+  
 }
 
-.ex1-card__message {
-  padding-top: 0.7rem;
-  font-style: italic;
-  color: red;
-}
 
-.ex1-card__counter {
-  font-weight: bold;
-  font-size: 1.3rem;
-  color: navy;
-}
-
-.ex1-card__count {
-  font-size: 4rem;
+/* exercise 7*/
+.testimonial {
+  display: flex;  
+  &-txt {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 img {
   width: 90%;
   height: auto;
 }
-.ex1-card__img {
-  max-width: 300px;
-  padding-bottom: 10px;
-  
-}
 
-.testimonial {
-  display: flex;
-}
-
-.testimonial-txt {
-  display: flex;
-  flex-direction: column;
-}
-
-.ex1-card__client {
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(56, 77, 56);
-  padding-bottom: 10px;
-}

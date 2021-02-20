@@ -12,76 +12,19 @@
         background-color: $bgCol;
     }
 
-//Standard top menu*********************
+//Standard links*********************
 
-a.std-link:link {
-    @include links(none, $pad: 5px, $col: #303234)    
+a.std-link {
+    &:link {
+        @include links(none, $pad: 5px, $col: #303234)
+    } 
+    &:visited {
+        @include links(none, $pad: 5px, $col: #86AAD3)
+    }   
+    &:hover {
+        @include links(none, $pad: 5px, $col: #ffffff, $bgCol: #303234)
+    }
+    &:active {
+        @include links(none, $pad: 5px, $col: #0F171F, $bgCol: #819FC1)
+    }
 }
-
-a.std-link:visited {
-    @include links(none, $pad: 5px, $col: #86AAD3)   
-}
-
-a.std-link:hover {
-    @include links(none, $pad: 5px, $col: #ffffff, $bgCol: #303234)    
-}
-
-a.std-link:active {
-    @include links(none, $pad: 5px, $col: #0F171F, $bgCol: #819FC1)
-
-}
-
-// Mobile & burger****************************************************
-a.burger_img:link {
-    @include links(none, $col: #819FC1)      
-}
-
-a.burger_img:visited {
-    @include links(none, $col: #819FC1)   
-}
-
-a.burger_img:hover {
-    @include links(none, $col: #ebebeb, $bgCol: #303234) 
-}
-
-a.mobile__link:link {
-    @include links(none, 0.8rem, 5px, #0F171F) 
-}
-
-a.mobile__link:visited {
-    @include links(none, $pad: 5px, $col: #86AAD3) 
-}
-
-a.mobile__link:hover {
-    @include links(none, 0.8rem, 5px, #ffffff, #303234)  
-}
-
-a.mobile__link:active {
-    @include links(none, $pad: 5px, $col: #0F171F, $bgCol: #819FC1) 
-}
-
-//footer std **********************************************************
-a.footer__link:link {
-    @include links(none, 0.7rem, 5px, #303234)    
-}
-
-a.footer__link:visited {
-    @include links(none, $pad: 5px, $col: #86AAD3) 
-}   
-
-a.footer__link:hover {
-    @include links(none, 0.7rem, 5px, #ffffff, #787e85)     
-}
-
-a.footer__link:active {
-    @include links(none, $pad: 5px, $col: #0F171F, $bgCol: #819FC1)    
-}
-
-//footer dark
-a.footer__link-dark:link {
-    @include links(none, 0.7rem, 5px, #3a3a3b)    
- }
-  
- a.footer__link-dark:hover {
-    @include links(none, $pad: 5px, $col: #ffffff, $bgCol: #3a3a3b)    
- }

@@ -25,105 +25,19 @@ a.std-link:active {
   background-color: #819FC1;
 }
 
-a.burger_img:link {
-  text-decoration: none;
-  color: #819FC1;
-}
-
-a.burger_img:visited {
-  text-decoration: none;
-  color: #819FC1;
-}
-
-a.burger_img:hover {
-  text-decoration: none;
-  color: #ebebeb;
-  background-color: #303234;
-}
-
-a.mobile__link:link {
-  text-decoration: none;
-  font-size: 0.8rem;
-  padding: 5px;
-  color: #0F171F;
-}
-
-a.mobile__link:visited {
-  text-decoration: none;
-  padding: 5px;
-  color: #86AAD3;
-}
-
-a.mobile__link:hover {
-  text-decoration: none;
-  font-size: 0.8rem;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #303234;
-}
-
-a.mobile__link:active {
-  text-decoration: none;
-  padding: 5px;
-  color: #0F171F;
-  background-color: #819FC1;
-}
-
-a.footer__link:link {
-  text-decoration: none;
-  font-size: 0.7rem;
-  padding: 5px;
-  color: #303234;
-}
-
-a.footer__link:visited {
-  text-decoration: none;
-  padding: 5px;
-  color: #86AAD3;
-}
-
-a.footer__link:hover {
-  text-decoration: none;
-  font-size: 0.7rem;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #787e85;
-}
-
-a.footer__link:active {
-  text-decoration: none;
-  padding: 5px;
-  color: #0F171F;
-  background-color: #819FC1;
-}
-
-a.footer__link-dark:link {
-  text-decoration: none;
-  font-size: 0.7rem;
-  padding: 5px;
-  color: #3a3a3b;
-}
-
-a.footer__link-dark:hover {
-  text-decoration: none;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #3a3a3b;
-}
-
-/* structure */
-.ex1-parent {
+/* general - page title & ex number*/
+.ex-parent {
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
-.ex1-foot {
+.ex-foot {
   padding-top: 1rem;
   text-align: left;
 }
 
-.ex1-card {
+.ex-card {
   width: clamp(10rem, 50%, 50rem);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,58 +47,73 @@ a.footer__link-dark:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffffff;
+  /* exercise 1*/
+  /* exercise 2*/
+  /* exercise 3*/
+  /* exercise 4*/
+  /* exercise 5*/
+  /* exercise 6*/
+  /* exercise 7*/
 }
 
-.ex1-card__button {
-  padding: 1rem;
+.ex-card__button {
+  padding: 5rem;
   text-align: center;
 }
 
-.ex1-button {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-
-.ex1-card__hex {
+.ex-card__hex {
   padding: 1rem;
+  font-size: 2rem;
 }
 
-.ex1-card__auth {
+.ex-card__word {
+  font-size: 1rem;
+}
+
+.ex-card__auth {
   text-align: right;
   font-size: 0.7rem;
 }
 
-.ex1-card__note {
+.ex-card__note {
   padding-top: 1rem;
 }
 
-.ex1-card__message {
-  padding-top: 0.7rem;
+.ex-card__message {
+  padding-top: 1rem;
   font-style: italic;
   color: red;
 }
 
-.ex1-card__counter {
+.ex-card__counter {
   font-weight: bold;
   font-size: 1.3rem;
   color: navy;
 }
 
-.ex1-card__count {
+.ex-card__count {
   font-size: 4rem;
 }
 
-img {
-  width: 90%;
-  height: auto;
-}
-
-.ex1-card__img {
+.ex-card__img {
   max-width: 300px;
   padding-bottom: 10px;
 }
 
+.ex-card__client {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #384d38;
+  padding-bottom: 10px;
+}
+
+.ex-button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f5f4f4;
+}
+
+/* exercise 7*/
 .testimonial {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,11 +130,9 @@ img {
           flex-direction: column;
 }
 
-.ex1-card__client {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #384d38;
-  padding-bottom: 10px;
+img {
+  width: 90%;
+  height: auto;
 }
 
 /* global elements */
@@ -244,8 +171,8 @@ h1::after {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto auto;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
-      grid-template: auto auto auto/repeat(auto-fill, minmax(100px, 1fr));
+  -ms-grid-columns: (minmax(110px, 1fr))[auto-fill];
+      grid-template: auto auto auto/repeat(auto-fill, minmax(110px, 1fr));
   grid-gap: 0.3rem;
 }
 
@@ -253,13 +180,13 @@ h1::after {
   grid-column: 1 / -1;
 }
 
-.grid-foot {
-  grid-column: 1 / -1;
-}
-
 .grid-element {
   background-color: #f3f3f3;
   padding: 10px;
   border-radius: 3px;
+}
+
+.grid-foot {
+  grid-column: 1 / -1;
 }
 /*# sourceMappingURL=styles.css.map */

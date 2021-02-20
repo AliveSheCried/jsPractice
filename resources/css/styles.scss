@@ -35,22 +35,26 @@ h1::after {
 /*main page structure*/
 .main-container {
     display: grid;
-    grid-template: auto auto auto / repeat(auto-fill, minmax(100px, 1fr));      
-    grid-gap: 0.3rem;
+    grid-template: auto auto auto / repeat(auto-fill, minmax(110px, 1fr));      
+    grid-gap: 0.3rem; 
+    
 }
 
 .grid-head {
-    grid-column: 1 / -1;      
-}
-
-.grid-foot {
-    grid-column: 1 / -1;      
+    grid-column: 1 / -1;          
 }
 
 .grid-element {
     background-color: #f3f3f3;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 3px;  
+  
 }
+
+
+.grid-foot {
+    grid-column: 1 / -1;      
+}
+
 
 

@@ -4,7 +4,7 @@ const cont = document.getElementById('container');
 const exercises = [1,2,3,4,5,6,7];
 //let count = exercises.length;
 
-//loop through exercises array and create div nodes to add
+//loop through exercises array and create div nodes with links to add
 const nodes = exercises.map(ex => {
     let div = document.createElement('div');
     let link = document.createElement('a');    
