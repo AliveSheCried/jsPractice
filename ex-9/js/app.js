@@ -43,27 +43,49 @@ searchParam.addEventListener('keyup', function(e) {
 
 
 //code for modal
-const modalWindow = document.getElementById('modal');
+const modalWindow = document.getElementById('modal-wrapper');
 const modalImg = document.getElementById('modal-img');
 const modalButtons = document.querySelectorAll('[class^="modal-btn"]');
 const images = document.querySelectorAll('[class^="card-img"]');
+const limit = images.length;
+
 
 images.forEach((image, index) => {
-    const imgIndex = index;
+    let imgIndex = index;
+    
     image.addEventListener('click', (e) => {
-        const selImg = `url("${e.target.getAttribute('src')}")`;       
-        modalImg.style.backgroundImage = selImg;
+        let imgSrc = e.target.getAttribute('src');
+        let bgImg = `url("${imgSrc}")`;       
+        modalImg.style.backgroundImage = bgImg;
         modalWindow.style.display = 'block'; 
 
         // button eventlistener
         modalButtons.forEach(btn => {
-        btn.addEventListener('click', (e)=> {
-        const selBtn = e.target.classList;  
-        selBtn.forEach(cls => {
-            if (cls.includes('close')) {                
-                modalWindow.style.display = 'none'
-                  }  
-              });   
+            btn.addEventListener('click', (e)=> {
+            const selBtn = e.target.classList;
+            selBtn.forEach(cls => {
+                //If to close window
+                if (cls.includes('close')) {                
+                    modalWindow.style.display = 'none'
+                    }; 
+                //index for left click     
+                if (cls.includes('left')) {
+                    imgIndex--;
+                // index for righ      
+                }  else if (cls.includes('right')){
+                    imgIndex++;       
+                };
+                //manage index if at limit of the array
+                if (imgIndex < 0) {
+                    imgIndex = limit - 1;
+                } else if (imgIndex === limit) {
+                    imgIndex = 0
+                }
+                imgSrc = images[imgIndex].getAttribute('src');
+                bgImg = `url("${imgSrc}")`; 
+                modalImg.style.backgroundImage = bgImg;  
+
+                });   
              })
         });
         // ends
@@ -74,35 +96,3 @@ images.forEach((image, index) => {
 
 
 
-//Original code for filter buttons - worked, but not svelte
-//function to show/hide tiles for selected/entered item
-// function showHide(button) {
-//     if (button === 'all') {
-//         toChange.forEach(x => x.style.display = 'block');
-//     } else {
-//         const status = document.querySelector(`[data-item=${CSS.escape(button)}]`) 
-//         if (status.style.display === 'none') {
-//             const toShow = document.querySelectorAll(`[data-item=${CSS.escape(button)}]`);           
-//             toShow.forEach(x => x.style.display = 'block');           
-//         };
-//         types.forEach(type => {
-//             if (type != button) {
-//                 const toHide = document.querySelectorAll(`[data-item=${CSS.escape(type)}]`);           
-//                 toHide.forEach(x => x.style.display = 'none'); 
-//             } 
-//         })
-//     };    
-// }
-// //function to process button clicks
-// const filterButton = (e) => {  
-//     //which buttton is pressed  
-//     const button = e.target.getAttribute('data-filter');
-//     //pass value to show hide        
-//     showHide(button);
-// };
-
-// // event listener for buttons
-// const pressedButton = document.getElementsByClassName('btn btn-outline-secondary btn-black text-uppercase filter-btn m-2');
-// for (let i = 0; i < pressedButton.length; i++) {
-//     pressedButton[i].addEventListener('click', filterButton);
-// };

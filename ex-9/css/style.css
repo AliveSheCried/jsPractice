@@ -197,8 +197,11 @@ body {
 }
 
 /* CSS for modal window */
-.modal {
+.modal-wrapper {
   display: none;
+}
+
+.modal {  
   display: flex;
   flex-direction: column;
   z-index: 99;
