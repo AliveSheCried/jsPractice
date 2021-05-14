@@ -1,7 +1,7 @@
 //HTML elemenent to append new div items
 const cont = document.getElementById('container');
 //Array of completed exercises & length
-const exercises = [1,2,3,4,5,6,7,8,9];
+const exercises = [1,2,3,4,5,6,7,8,9,10];
 //let count = exercises.length;
 
 //loop through exercises array and create div nodes with links to add
